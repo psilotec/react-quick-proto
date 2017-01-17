@@ -5,11 +5,13 @@ const Header = () => {
       <div className='App'>
         <div className="ui top fixed menu">
           <div className="item">
-            Logo
+            Quick Proto
           </div>
-          <a className="item">Features</a>
-          <a className="item">Testimonials</a>
-          <a className="item">Sign-in</a>
+          <a className="item">About</a>
+          <a className="item">Projects</a>
+          <div className="right menu">
+            <a className="item">Create New Project</a>
+          </div>
         </div>
       </div>
     );
