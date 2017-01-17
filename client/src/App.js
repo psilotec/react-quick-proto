@@ -1,20 +1,12 @@
-import React from 'react';
+import React, { Component } from 'react';
+import Header from './components/header';
 
-const App = React.createClass({
-  getInitialState: function () {
-    return {
-      selectedFoods: [],
-    };
-  },
-  render: function () {
+class App extends Component {
+  render() {
     return (
-      <div className='App'>
-        <div className='ui text container'>
-          
-        </div>
-      </div>
+      <Header />
     );
-  },
-});
+  }
+}
 
 export default App;
