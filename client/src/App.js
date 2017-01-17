@@ -1,10 +1,15 @@
 import React, { Component } from 'react';
+
 import Header from './components/header';
+import ProtoMain from './components/projects/proto-main';
 
 class App extends Component {
   render() {
     return (
-      <Header />
+      <div>
+        <Header />
+        <ProtoMain />
+      </div>
     );
   }
 }
