@@ -92,7 +92,14 @@ module.exports = {
         include: paths.appSrc,
       }
     ],
+
     loaders: [
+      // Process SCSS
+      {
+        test: /\.scss$/,
+        loaders: ["style", "css", "sass"]
+      },
+
       // Process JS with Babel.
       {
         test: /\.(js|jsx)$/,
