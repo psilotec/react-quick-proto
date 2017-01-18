@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import '../styles/style.scss';
 
 import Header from './components/header';
 import ProtoMain from './components/prototypes/proto-main';

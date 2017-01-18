@@ -92,12 +92,11 @@ module.exports = {
         include: paths.appSrc,
       }
     ],
-    
+
     loaders: [
       // Process SCSS
       {
         test: /\.scss$/,
-        include: paths.appSrc,
         loaders: ["style", "css", "sass"]
       },
 
