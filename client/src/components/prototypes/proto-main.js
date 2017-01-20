@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 import ComponentBtn from './component-btn';
+import ToggleGridlines from './toggle-gridlines';
 
 class ProtoMain extends Component {
     constructor(props) {
@@ -9,6 +10,7 @@ class ProtoMain extends Component {
         // State to keep track of grid lines checkbox
         this.state = {
             checked: false,
+            gridlines: ""
         };
 
         this.handleChange = this.handleChange.bind(this);
@@ -21,10 +23,7 @@ class ProtoMain extends Component {
         console.log(this.state.checked);
         return (
             <div className="proto-main-flex">
-                <div className="ui toggle checkbox" onClick={this.handleChange} >
-                    <input type="checkbox" name="public" value={this.state.checked} />
-                    <label>Show grid lines</label>
-                </div>
+                <ToggleGridlines checked={this.state.checked} handleChange={this.handleChange} />
 
                 <h2>Project Name</h2>
                 
