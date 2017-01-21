@@ -21,18 +21,15 @@ class ProtoMain extends Component {
     }
 
     renderGridlines() {
-        if (this.state.checked) {
-            return "proto-main-flex gridlines";
-        }
-        return "proto-main-flex";
+        return (this.state.checked) ? "proto-main-flex gridlines" : "proto-main-flex";
     }
     render() {        
         return (
             <div className={this.renderGridlines()}>
+                <h2>Project Name</h2>
+
                 <ToggleGridlines handleToggle={this.handleToggle}/>
 
-                <h2>Project Name</h2>
-                
                 <ComponentBtn />
                 <ComponentBtn />
                 <ComponentBtn />
