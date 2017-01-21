@@ -1,10 +1,18 @@
+/* App formatting */
+.app-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 /* ProtoMain formatting */
 .proto-main-flex {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     flex-wrap: nowrap;
-    width: 100vw;
+    width: 98vw;
     height: 85vh;
 }
 
