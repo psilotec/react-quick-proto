@@ -1,9 +1,42 @@
+/* App formatting */
+.app-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ProtoMain formatting */
 .proto-main-flex {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     flex-wrap: nowrap;
-    width: 85vw;
+    width: 98vw;
     height: 85vh;
-    margin-right: 0;
 }
+
+/* ProtoBoard formatting */
+.proto-board-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    width: 100%;
+    height: 100%;
+}
+
+/* ComponentBtn formatting */
+
+
+/* ProtoBoard grid toggle styling */
+.gridlines {
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, .2) 98%, transparent 50%, transparent);
+    background-image: -moz-linear-gradient(rgba(0, 0, 0, .2) 98%, transparent 50%, transparent);
+    background-image: linear-gradient(90deg, transparent 98%, rgba(0,0,0,.2) 50%);
+
+    -webkit-background-size: 125px 125px;
+    -moz-background-size: 125px 125px;
+    background-size: 125px 125px;
+}
+

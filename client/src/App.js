@@ -7,7 +7,7 @@ import ProtoMain from './components/prototypes/proto-main';
 class App extends Component {
   render() {
     return (
-      <div>
+      <div className="app-flex">
         <Header />
         <ProtoMain />
       </div>
